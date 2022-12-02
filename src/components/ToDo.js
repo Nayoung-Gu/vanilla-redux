@@ -12,10 +12,8 @@ function ToDo(props) {
 
     return (
         <li>
-            <Link to={`/${props.id}`}>
-                {props.text}
-                <button onClick={onClick}>❌</button>
-            </Link>
+            <Link to={`/${props.id}`}>{props.text}</Link>
+            <button onClick={onClick}>❌</button>
         </li>
     );
 }
